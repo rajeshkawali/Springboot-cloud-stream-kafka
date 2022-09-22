@@ -1,0 +1,26 @@
+# Kafka Config
+spring.application.name: Springboot-cloud-stream-kafka
+server.port: 8181
+#spring.profiles.active: local
+
+#spring.cloud.stream.default.contentType: application/json #text/plain #text/xml #application/xml #application/json
+spring.cloud.stream.default-binder: kafka
+
+spring.cloud.stream.bindings.consumeMessage.destination: TOPIC.RAJESHKAWALI
+spring.cloud.stream.bindings.consumeMessage.contentType: application/json
+#spring.cloud.stream.bindings.consumeMessage.group: RAJESHKAWALI
+
+spring.cloud.stream.bindings.publishMessage.destination: TOPIC.RAJESHKAWALI
+spring.cloud.stream.bindings.publishMessage.contentType: application/json
+#spring.cloud.stream.bindings.publishMessage.group: RAJESHKAWALI
+
+spring.cloud.stream.kafka.binder.brokers: localhost:9092
+spring.cloud.stream.kafka.binder.autoCreateTopics: true
+
+
+
+
+
+
+
+
